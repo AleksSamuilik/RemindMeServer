@@ -4,19 +4,21 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Date;
+
 @Entity
 @Table(name = "remind")
 public class Remind {
 
-@Id
-@GeneratedValue(generator = "increment")
-@GenericGenerator(name = "increment", strategy = "increment")
+    @Id
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
     private long id;
 
-@Column(name = "title",nullable = false,length = 50)
+    @Column(name = "title", nullable = false, length = 50)
     private String title;
 
-@Column (name = "remind_date",nullable = false)
+    @Column(name = "remind_date", nullable = false)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date remindDate;
 
     public long getId() {
