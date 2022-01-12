@@ -20,7 +20,7 @@
         </plugins>
     </build>
     <properties>
-        <spring.version>5.2.1.RELEASE</spring.version>
+        <spring.version>5.3.14</spring.version>
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
         <spring-data-jpa.version>2.2.1.RELEASE</spring-data-jpa.version>
         <hibernate-entitymanager.version>5.4.8.Final</hibernate-entitymanager.version>
